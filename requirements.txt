@@ -1,2 +1,3 @@
 miracle-acl
 flask
+nose2
