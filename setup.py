@@ -7,8 +7,8 @@ requirements = [
 
 setup(
     name='flask-miracle-acl',
-    version='0.1',
-    description='The fabric between the Flask framework and Miracle ACL',
+    version='0.2',
+    description='A connecting layer between the Flask framework and Miracle ACL',
     author='Timo "tdpsk" Puschkasch',
     author_email='timo@puschkasch.com',
     url='https://github.com/tdpsk/flask-miracle-acl',
@@ -21,5 +21,7 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.6',
         'License :: OSI Approved :: BSD License'
-    ]
+    ],
+    test_suite='nose.collector',
+    tests_require=['nose']
 )
