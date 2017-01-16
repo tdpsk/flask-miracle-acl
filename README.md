@@ -6,6 +6,14 @@ This library provides a small fabric code layer which connects the
 [Miracle ACL](https://github.com/kolypto/py-miracle) library for Python to the
 well-known and widely used [Flask](http://flask.pocoo.org/) framework.
 
+# Installing
+
+The flask-miracle-acl library comes as a pure Python package and can be installed using pip:
+
+`pip install flask-miracle-acl`
+
+Downloads and manual installation instructions can be found on PyPI: [flask-miracle-acl](https://pypi.python.org/pypi/flask-miracle-acl)
+
 # Configuration
 
 In order to actively use the library connector, it needs to be configured.
