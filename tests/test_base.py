@@ -1,12 +1,17 @@
 from flask_miracle import Acl
 import unittest
 
+
 class TestBaseClass(unittest.TestCase):
     acl = None
 
     def setUp(self):
         self.acl = Acl()
-        self.acl.load_from_dict({'roles': {'admin', 'user'}, 'struct': {'blog': {'post', 'read'}, 'product': {'post', 'read'}}, 'grants': {'user': {'blog': {'read'}}, 'admin': {'blog': {'read', 'write'}}}})
+        self.acl.load_from_dict({'roles': {'admin', 'user'},
+                                 'struct': {'blog': {'post', 'read'},
+                                            'product': {'post', 'read'}},
+                                 'grants': {'user': {'blog': {'read'}},
+                                            'admin': {'blog': {'read', 'write'}}}})
 
     def test_load_dict(self):
         self.acl.load_from_dict({'grants': {'user': {'blog': {'write'}}}})
@@ -47,6 +52,7 @@ class TestBaseClass(unittest.TestCase):
             return ['admin']
         self.acl.set_roles_callback(func)
         assert self.acl.check_any('blog', 'write') is True
+
 
 if __name__ == '__main__':
     unittest.main()

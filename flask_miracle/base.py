@@ -5,7 +5,6 @@ base class for flask_miracle
 '''
 
 from miracle.acl import Acl as MiracleAcl
-from flask import Flask, current_app
 
 
 class Acl():
@@ -39,7 +38,8 @@ class Acl():
         """
         self.app.config.setdefault('MACL_DEFINITION', None)
         self.app.config.setdefault('MACL_CLASS', None)
-        self.app.config.setdefault('MACL_ERROR_MESSAGE', 'You do not have access to this resource')
+        self.app.config.setdefault('MACL_ERROR_MESSAGE',
+                                   'You do not have access to this resource')
 
         self.app.miracle_acl_manager = self
 
