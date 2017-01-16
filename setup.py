@@ -11,8 +11,7 @@ setup(
     description='The fabric between the Flask framework and Miracle ACL',
     author='Timo "tdpsk" Puschkasch',
     author_email='timo@puschkasch.com',
-    url='https://github.com/tdpsk/flask-miracle-acl'
-    scripts=[],
+    url='https://github.com/tdpsk/flask-miracle-acl',
     license='BSD',
     packages=find_packages(exclude=['tests']),
     platforms='any',
