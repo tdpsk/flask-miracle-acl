@@ -1,4 +1,0 @@
-miracle-acl
-flask
-nose2
-coverage
