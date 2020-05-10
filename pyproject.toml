@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "flask-miracle-acl"
+version = "0.2.1"
+description = "A connecting layer between the Flask framework and Miracle ACL"
+license = "BSD"
+
+authors = [
+    "Timo Puschkasch <timo@puschkasch.com>"
+]
+
+readme = "README.md"
+repository = "https://github.com/tdpsk/flask-miracle-acl"
+homepage = "https://github.com/tdpsk/flask-miracle-acl"
+
+[tool.poetry.dependencies]
+python = "*"
+miracle-acl = "*"
+flask = "*"
+
+[tool.poetry.dev-dependencies]
+nose2 = "*"
+coverage = "*"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
